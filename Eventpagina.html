@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<title>Event pagina</title>
+<link rel="stylesheet" type="text/css" href="Eventpagina.css">
+</head> 
+<body>
+<form>
+  <form action="/action_page.php">
+  <label for="titel">Titel:</label><br>
+  <input type="text" id="titel" name="titel"><br>
+  <label for="flname">Naam:</label><br>
+  <input type="text" id="flname" name="flname"><br>
+  <label for="bschrijving">Beschrijving:</label><br>
+  <input type="text" id="bschrijving" name="bschrijving"><br>
+  <label for="bdatum">Begin datum:</label><br>
+  <input type="text" id="bdatum" name="bdatum"><br>
+  <label for="edatum">Eind datum:</label><br>
+  <input type="text" id="edatum" name="edatum"><br>
+
+  <form action="/action_page.php" target="_blank" method="post"><br>
+  <input type="submit" value="Submit"><br><br><br><br>
+
+  <button class="button" onclick="get()">Get </button>
+  <p id="tekstvanuitdatabase"></p>
+</form>
+<script src="Evenstspage.js"></script>
+</body>
+</html>
